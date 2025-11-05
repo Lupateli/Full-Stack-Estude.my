@@ -75,6 +75,148 @@ Principais recursos:
 
 ---
 
+📋 Requisitos do Sistema
+⚙️ Requisitos Funcionais
+
+👤 Gestão de Usuários
+
+RF01 – Cadastrar Usuário
+
+Validar o formato do e-mail;
+Verificar se o e-mail já está cadastrado.
+Ações pós-cadastro:
+Enviar e-mail de confirmação;
+Redirecionar para a página de login;
+Exibir mensagem de sucesso.
+
+RF02 – Autenticar Usuário
+
+Redirecionar para a página principal;
+
+Iniciar uma sessão de usuário.
+RF03 – Gerenciar Perfil
+
+Detalhes: Permitir que usuários visualizem e editem seus dados pessoais (nome, e-mail, senha, foto de perfil etc.).
+Validações: Validar os novos dados (formato de e-mail, critérios de senha, etc.).
+Ações pós-atualização: Exibir mensagem de sucesso e atualizar os dados no banco de dados.
+
+RF04 – Recuperar Senha
+
+Detalhes: Permitir que os usuários recuperem suas senhas caso as tenham esquecido.
+Fluxo: Enviar um e-mail com link para redefinição de senha.
+
+RF05 – Desativar Conta
+
+Detalhes: Permitir que os usuários desativem suas contas.
+Confirmação: Solicitar confirmação antes da desativação.
+
+📚 Gestão de Conteúdo
+RF06 – Cadastrar Trilha
+
+Detalhes: Professores podem cadastrar trilhas de aprendizado com nome, descrição, nível, categoria e outros atributos relevantes.
+
+RF07 – Cadastrar Curso
+
+Detalhes: Professores podem cadastrar cursos dentro de uma trilha com nome, descrição, carga horária e outros atributos.
+
+RF08 – Cadastrar Lição
+
+Detalhes: Professores podem cadastrar lições dentro de um curso, definindo título, conteúdo (texto, vídeo, quiz, etc.) e outros atributos.
+
+RF09 – Visualizar Trilha
+
+Detalhes: Alunos podem visualizar as trilhas disponíveis na plataforma.
+
+RF10 – Visualizar Curso
+
+Detalhes: Alunos podem visualizar os cursos dentro de uma trilha.
+
+RF11 – Visualizar Lição
+
+Detalhes: Alunos podem visualizar as lições dentro de um curso.
+
+🏆 Gamificação
+RF12 – Sistema de Pontuação
+
+Detalhes: Atribuir pontos aos alunos por completar lições, cursos, trilhas, participar de desafios, etc.
+
+RF13 – Sistema de Badges
+
+Detalhes: Conceder badges aos alunos por conquistas e marcos de progresso.
+
+RF14 – Ranking
+
+Detalhes: Exibir ranking dos alunos com maiores pontuações.
+
+RF15 – Desafios
+
+Detalhes: Permitir que professores criem desafios com recompensas em pontos e badges.
+
+💬 Interação e Comunicação
+RF16 – Notificações
+
+Detalhes: Enviar notificações sobre novas trilhas, cursos, lições, desafios e mensagens.
+
+RF17 – Comentários
+
+Detalhes: Permitir que alunos e professores comentem em lições, cursos e trilhas.
+
+📈 Relatórios
+RF18 – Relatórios de Progresso
+
+Detalhes: Gerar relatórios de progresso dos alunos, mostrando desempenho em trilhas, cursos e lições.
+
+RF19 – Relatórios de Desempenho
+
+Detalhes: Gerar relatórios de desempenho dos professores, mostrando engajamento dos alunos em suas trilhas e cursos.
+
+🔒 Requisitos Não Funcionais
+⚡ Desempenho
+
+RNF01: O sistema deve carregar as páginas em no máximo 3 segundos.
+
+RNF02: Suportar até 1000 usuários simultâneos.
+
+🔐 Segurança
+
+RNF03: As senhas devem ser armazenadas de forma criptografada.
+
+RNF04: Proteger dados contra acesso não autorizado.
+
+RNF05: Implementar prevenção contra SQL Injection e XSS.
+
+📈 Escalabilidade
+
+RNF06: O sistema deve suportar crescimento de usuários e conteúdo.
+
+🌐 Compatibilidade
+
+RNF07: Compatível com os principais navegadores (Chrome, Firefox, Safari, Edge).
+
+♿ Acessibilidade
+
+RNF08: Seguir diretrizes WCAG para acessibilidade.
+
+🧭 Usabilidade
+
+RNF09: Interface intuitiva e fácil de usar.
+
+RNF10: Navegação consistente e eficiente.
+
+RNF11: Elementos de gamificação devem ser motivadores e engajadores.
+
+🧩 Manutenibilidade
+
+RNF12: Arquitetura modular e organizada para facilitar manutenção.
+
+RNF13: Código bem documentado e seguindo boas práticas.
+
+📱 Portabilidade
+
+RNF14: Acesso via dispositivos móveis (smartphones e tablets).
+
+---
+
 ## ⚙️ Tecnologias Utilizadas
 
 ### Backend
